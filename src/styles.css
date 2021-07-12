@@ -1,11 +1,68 @@
 :root{
+	--color-primary-xo: #bf0426;
+	--color-primary-o: #de1236;
+	--color-primary: #FA163F;
+	--color-primary-l: #ff3b5f;
+	--color-primary-xl: #ff5473;
 
+	--color-secondary-xo: #1f9ea6;
+	--color-secondary-o: #1cb3bd;
+	--color-secondary: #12CAD6;
+	--color-secondary-l: #39e2ed;
+	--color-secondary-xl: #61e5ed;
+
+	--color-bg: #e3fdff;
+
+	--text: #16191a;
+	--text-l: #404747;
+	--text-xl: #6f7a7a;
 }
 
 html, body{
 	font-family: 'Nunito', sans-serif;
+	color: var(--text);
+	background-color: var(--color-bg);
 }
 
 .header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+}
+.header_img{
+	height: 15em;
+}
+.header_title{
 	font-family: 'Otomanopee One', sans-serif;
+	border-bottom: 2px solid var(--color-primary);
+	padding: 0.2em 0.5em;
+}
+.header_contact{
+	display: flex;
+	flex-direction: row;
+}
+.contact_item{
+	text-decoration: none;
+	color: var(--color-secondary-o);
+	border: 2px solid var(--color-secondary-o);
+	margin: 0 0.5em;
+	font-size: 1.5em;
+	display: flex;
+	width: 2.3em;
+	height: 1.3em;
+	align-items: center;
+	align-content: center;
+	transition: background-color 0.5s, color 0.5s;
+}
+.contact_item:hover{
+	background-color: var(--color-secondary-o);
+	color: var(--color-bg);
+}
+.contact_item i{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	margin: 0 auto;
 }
