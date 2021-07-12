@@ -1,8 +1,11 @@
-*{
-	margin: 0;
-	padding: 0;
+:root{
+
 }
 
-body{
-	background-color: #222;
+html, body{
+	font-family: 'Nunito', sans-serif;
+}
+
+.header{
+	font-family: 'Otomanopee One', sans-serif;
 }
